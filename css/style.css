@@ -53,7 +53,45 @@ ul {
     color: white;
 }
 
+.article-icon {
+    margin-bottom: 30px;
+    background-color: var(--scnd-background);
+    border-radius: 4px;
+    border-style: none;
+    width: 270px;
+    height: 120px;
+}
+
 /* UTILS */
+
+/* ICONS */
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    fill: var(--scnd-font-color);
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    fill: var(--scnd-font-color);
+}
+.team-sm-icons {
+    display: flex;
+    padding: 16px 32px 30px 32px;
+}
+
+.team-sm-icons-item {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+}
+.social-link {
+    width: 20px;
+    height: 20px;
+}
+
+/* ICONS */
 
 /* HEADER */
 .header {
@@ -80,7 +118,7 @@ ul {
 
 .header-contacts {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     margin-right: 12px;
 }
 
@@ -100,6 +138,11 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+}
+
+.header-icon-link {
+    display: inline-flex;
+    gap: 10px;
 }
 
 .header-contacts-item:is(:hover, :focus),
@@ -218,11 +261,21 @@ h2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    padding-bottom: 30px;
 }
 /* TEAM */
 
 /* CLIENT */
+.client-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+.client {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
 /* CLIENT */
 
 /* FOOTER */
@@ -260,6 +313,16 @@ h2 {
     opacity: 1;
 }
 
+.social {
+    display: inline-block;
+}
+
+.social-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
 /* FOOTER */
 
 /* PORTFOLIO */
