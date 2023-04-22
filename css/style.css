@@ -76,19 +76,18 @@ ul {
     height: 16px;
     fill: var(--scnd-font-color);
 }
-.team-sm-icons {
-    display: flex;
-    padding: 16px 32px 30px 32px;
+.icon-article-item {
+    width: 70px;
+    height: 70px;
+    padding: 25px 100px;
 }
-
-.team-sm-icons-item {
-    display: inline-flex;
+.team-sm-icon {
+    padding: 12px;
     width: 20px;
     height: 20px;
 }
-.social-link {
-    width: 20px;
-    height: 20px;
+.team-sm-icon:is(:hover, :focus) {
+    color: white;
 }
 
 /* ICONS */
@@ -154,7 +153,8 @@ ul {
 /* HERO */
 .hero {
     color: white;
-    background: var(--main-background);
+    background-image: url(./images/background-photo.jpg);
+    background-color: var(--main-background);
     text-align: center;
     padding: 200px 0;
 }
@@ -262,20 +262,51 @@ h2 {
     font-size: 16px;
     line-height: 1.18;
 }
+.team-socialmedia {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+}
+.social-link:is(:hover, :focus) {
+    background-color: var(--primary-color);
+}
 /* TEAM */
 
 /* CLIENT */
 .client-list {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
 }
+.client-item {
+    display: inline-flex;
+    width: 106px;
+    height: 60px;
+}
+.client:is(:hover, :focus) {
+    border-color: var(--primary-color);
+}
+
 /* CLIENT */
 
 /* FOOTER */
@@ -313,15 +344,22 @@ h2 {
     opacity: 1;
 }
 
-.social {
-    display: inline-block;
+.join-us {
+    display: flex;
 }
 
-.social-text {
+.join-us-text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+}
+.join-us-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    fill: solid var(--main-background);
 }
 /* FOOTER */
 
