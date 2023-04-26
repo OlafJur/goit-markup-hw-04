@@ -95,24 +95,21 @@ ul {
     letter-spacing: 0.02em;
 }
 .header-contacts-item {
-    white-space: nowrap;
-    color: var(--scnd-font-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    text-decoration: none;
-}
-
-.header-contacts-item {
     display: inline-flex;
     justify-content: center;
     align-content: center;
     gap: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--scnd-font-color);
+    fill: var(--scnd-font-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 .icon-contact {
     width: 16px;
     height: 12px;
-    fill: var(--scnd-font-color);
 }
 .icon-phone {
     width: 10px;
@@ -130,8 +127,12 @@ ul {
 
 /* HERO */
 .hero {
-    background-image: url('/images/hero-photo.jpg'),
-        linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(
+            to top,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero-photo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--main-background);
