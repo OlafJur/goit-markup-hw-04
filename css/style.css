@@ -102,7 +102,7 @@ ul {
     white-space: nowrap;
     text-decoration: none;
     color: var(--scnd-font-color);
-    fill: var(--scnd-font-color);
+    fill: currentColor;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
